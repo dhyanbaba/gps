@@ -1,0 +1,36 @@
+<html><head>
+    <style type="text/css">
+
+.magnifyarea{ /* CSS to add shadow to magnified image. Optional */
+box-shadow: 5px 5px 7px #818181;
+-webkit-box-shadow: 5px 5px 7px #818181;
+-moz-box-shadow: 5px 5px 7px #818181;
+filter: progid:DXImageTransform.Microsoft.dropShadow(color=#818181, offX=5, offY=5, positive=true);
+background: white;
+}
+
+</style>
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+<script type="text/javascript" src="featuredimagezoomer.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+      $('image').addimagezoom({
+		zoomrange: [5, 5],
+		magnifiersize: [400,400],
+		magnifierpos: 'right',
+		cursorshade: true,
+		cursorshadecolor: 'pink',
+		cursorshadeopacity: 0.3,
+		cursorshadeborder: '1px solid red',
+		largeimage: '183520_158949797496051_100001430954662_372463_6317629_n.jpg' //<-- No comma after last option!
+	});
+
+    }
+
+  </script></head>
+  <body>
+<p><img id="image" border="0" src="183520_158949797496051_100001430954662_372463_6317629_n.jpg" style="width:300px;height:225px" /></p>
+
+</body>
+  </html>
